@@ -1,3 +1,4 @@
+somaNumeros(1, 2);
 let numeroSecreto = Math.floor(Math.random() * 5 + 1);
 // let tentativas = 1;
 
