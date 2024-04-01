@@ -1,0 +1,1 @@
+//crie uma função que aceite dois parametros(números) e some os valores.
