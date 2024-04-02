@@ -1,4 +1,3 @@
-
 function gerarNumeroAleatorio(index){
     return Math.floor(Math.random() * index + 1);
 }
@@ -27,7 +26,7 @@ function jogo () {
         }    
     }
     let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
-    if(tentativas < 4){
+    if(tentativas < numeroDeTentativas){
         alert(`Você acertou com ${tentativas} ${palavraTentativa}`)
     }
 } 
