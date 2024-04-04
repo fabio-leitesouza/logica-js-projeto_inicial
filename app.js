@@ -2,17 +2,20 @@ function gerarNumeroAleatorio(index){
     return Math.floor(Math.random() * index + 1);
 }
 
+let listaNumerosDigitados = [];
+
 function jogo () {
     let numeroDePosicoesAleatorias = parseInt(prompt('Quantos númeos você quer aleatorizar'))
-    let numeroDeTentativas = parseInt(prompt('Em quantas tentativas você quer tentar adivinhas?'))
+    let numeroDeTentativas = 3
     let numeroSecreto = gerarNumeroAleatorio(numeroDePosicoesAleatorias);
 
     for(let tentativas = 0; tentativas < numeroDeTentativas; tentativas++){
-        let numeroDigitado = parseInt(prompt(`Digite um número de 1 a ${numeroDePosicoesAleatorias}`));
-        if(numeroDigitado === numeroSecreto){
+        listaNumerosDigitados[tentativas] = parseInt(prompt(`Digite um número de 1 a ${numeroDePosicoesAleatorias}`));
+
+        if(listaNumerosDigitados[tentativas] === numeroSecreto){
             alert('Parabéns, você acertou!');
             break;
-        } else if(numeroDigitado > numeroSecreto){
+        } else if(listaNumerosDigitados[tentativas] > numeroSecreto){
             alert('Você digitou um número maior que o número secreto');
         } else {
             alert('Você digitou um número menor que o número secreto');
@@ -25,6 +28,7 @@ function jogo () {
             alert(`você ainda tem  ${numeroDePosicoesAleatorias - tentativas - 1} tentativa`);
         }    
     }
+    alert(`Os números que você chutou são: ${listaNumerosDigitados[0]}, ${listaNumerosDigitados[1]} e ${listaNumerosDigitados[2]}` )
     let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
     if(tentativas < numeroDeTentativas){
         alert(`Você acertou com ${tentativas} ${palavraTentativa}`)
