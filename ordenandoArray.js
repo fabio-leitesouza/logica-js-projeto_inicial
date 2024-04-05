@@ -1,0 +1,1 @@
+//crie um programa que leia uma Array com 10 posições com atribuições aleatórias de números inteiros. Ordene os números e apresente na ordem correta.
