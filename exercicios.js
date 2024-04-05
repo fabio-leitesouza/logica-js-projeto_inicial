@@ -30,3 +30,13 @@ function maiorNumeroArray(arr){
 }
 
 alert(maiorNumeroArray(lista));
+
+function mostrarInveso(arr){
+    let arrInversa = [];
+    for(let i = arr.length - 1; i >= 0; i--){
+        arrInversa.push(arr[i]);
+    }
+    return arrInversa;
+}
+
+alert(mostrarInveso(lista))
