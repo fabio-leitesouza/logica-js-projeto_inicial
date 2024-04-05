@@ -22,8 +22,8 @@ function ordenaLista(arr){
     return listaOrdenada;
 }
 
-arr = geraLista(arr);
-let listaOrdenada = ordenaLista(arr);
+arr = geraLista(arr, tamanhoDeLista);
+let listaOrdenada = ordenaLista(arr)
 
 alert(arr);
 alert(listaOrdenada.join(", "));
