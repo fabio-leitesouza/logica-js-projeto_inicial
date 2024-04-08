@@ -4,6 +4,7 @@
 //4-crie uma array e remova os itens duplicados;
 //5-contar o númeo de vezes que o mesmo elemento aparece na array;
 //6-crie uma função para calcular o fatorial de um número. Use lista;
+//7-Crie um Array multimensional com 3 arrays de 3 elementos cada. Entre com os valores de forma aleatória e apresente os valores.
 
 //1
 function somaArray(arr){
@@ -40,3 +41,4 @@ function mostrarInveso(arr){
 }
 
 alert(mostrarInveso(lista))
+
