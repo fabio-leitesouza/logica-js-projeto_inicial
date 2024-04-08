@@ -1,15 +1,20 @@
-let atividade = [
-    ['acorda', 5],
-    ['aula', 7]
+let tabelaEntrada = [
+    [0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0]
 ]
-let tabelaTexto;
 
-for(let i = 0; i < 2; i++){
-    for(let j = 0; j < 2; j++){
-        
+function aleatorizandoTabela(tabela){
+    for(let i = 0; i < tabela.length; i++){
+        for(let j = 0; j < tabela[i].length; j++){
+            tabela[i][j] = gerarNumeroAleatorio(100)
+        }
     }
+    return tabela;
 }
 
-let matrizString = JSON.stringify(atividade);
-alert(matrizString);
-console.table(atividade);
+function gerarNumeroAleatorio(range){
+    return Math.floor(Math.random() * range + 1);
+}
+
+console.table(aleatorizandoTabela(tabelaEntrada));
