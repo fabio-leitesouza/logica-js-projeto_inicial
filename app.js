@@ -1,10 +1,10 @@
-// alert("Bem vindo ao jogo do número secreto");
+function exibirTextoNaTela(tag, texto){
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+}
 
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Jogo do número secreto';
-
-let subtitulo = document.querySelector('h2');
-subtitulo.innerHTML = 'Digite o número secreto'
+exibirTextoNaTela('h1', 'Jogo do número ');
+exibirTextoNaTela('h2', 'Digite um número de 1 a 10');
 
 
 let chute;
