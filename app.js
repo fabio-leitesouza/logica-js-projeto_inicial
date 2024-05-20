@@ -1,11 +1,12 @@
 alert("Bem vindo ao jogo do número secreto");
-let numeroSecreto = 5;
+
+let numeroSecreto = parseInt(Math.random() * 10);
 let chute;
 let tentativas = 3;
 
 while (tentativas > 0) {
-    chute = prompt("Digite um número de 1 a 10: ");
-    if(chute == numeroSecreto){
+    chute = parseInt(prompt("Digite um número de 1 a 10: "));
+    if(chute === numeroSecreto){
         console.log("Você acertou");
         alert(`Parabéns vc acertou! O número secretop é: ${chute}`);
         break;
