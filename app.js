@@ -1,8 +1,15 @@
 // alert("Bem vindo ao jogo do número secreto");
 
+let titulo = document.querySelector('h1');
+titulo.innerHTML = 'Jogo do número secreto';
+
+let subtitulo = document.querySelector('h2');
+subtitulo.innerHTML = 'Digite o número secreto'
+
 
 let chute;
 let tentativas = 3;
+
 
 function verificaChute() {  
     let numeroSecreto = parseInt(Math.random() * 10 + 1);
