@@ -6,10 +6,8 @@ function exibirTextoNaTela(tag, texto){
 exibirTextoNaTela('h1', 'Jogo do número ');
 exibirTextoNaTela('h2', 'Digite um número de 1 a 10');
 
-
 let chute;
 let tentativas = 3;
-
 
 function verificaChute() {  
     let numeroSecreto = parseInt(Math.random() * 10 + 1);
